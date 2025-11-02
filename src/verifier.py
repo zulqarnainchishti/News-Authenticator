@@ -59,8 +59,6 @@ def verify_claim(claim, evidences):
     response = client.models.generate_content(
         model=MODEL_GEMINI,
         contents=prompt,
-        # optional: you can set generation parameters, e.g. temperature=0 for deterministic output
-        # config=genai.types.GenerateContentConfig(temperature=0.0)
     )
     
     # Extract output

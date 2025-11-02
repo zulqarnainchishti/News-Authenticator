@@ -5,7 +5,7 @@ import src.retriever as retriever
 import src.verifier as verifier
 
 st.set_page_config(
-    page_title="News Authenticity Verifier",
+    page_title="News Authenticator",
     page_icon="📰",  # Site icon
     layout="centered",
 )
@@ -30,7 +30,7 @@ def display_verdict(verdict_data):
 
     # Color & emoji mapping
     verdict_styles = {
-        "Real": ("✅ Real", "#2ecc71"),
+        "Real": ("✅ Real", "#27ae60"),
         "Fake": ("❌ Fake", "#e74c3c"),
         "Unverifiable": ("⚠️ Unverifiable", "#f1c40f"),
     }
@@ -69,7 +69,7 @@ def display_verdict(verdict_data):
     )
 
 if __name__ == "__main__":
-    st.title("📰 News Authenticity Verifier")
+    st.title("📰 News Authenticator")
     st.markdown(
         """
         <p style="color:#6c757d; font-size:1rem;">

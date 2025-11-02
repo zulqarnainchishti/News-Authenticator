@@ -23,7 +23,6 @@ def format_block(row):
     
     return block
 
-
 def build_index(embeddings):
     
     # for cosine similarity

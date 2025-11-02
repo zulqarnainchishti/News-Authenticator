@@ -92,6 +92,8 @@ if __name__ == "__main__":
 
             print(f"📄Processed file: {file}")
         print(f"📁Processed folder: {folder}")
+        
+    articles_data = [a for a in articles_data if a is not None]
 
     df = pd.DataFrame(articles_data)
     print(f"\nTotal articles: {len(df)}")
